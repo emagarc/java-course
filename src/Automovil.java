@@ -1,9 +1,13 @@
-public class Automovil {
-    private String marca;
+public abstract class Automovil {
+    protected String marca;
     private String modelo;
     private int anioFabricacion;
 
     public Automovil() {}
+
+    public Automovil(String marca) {
+        this.marca = marca;
+    }
 
 //    constructor lleno
     Automovil(String marca, String modelo, int anioFabricacion) {
@@ -12,9 +16,7 @@ public class Automovil {
         this.anioFabricacion = anioFabricacion;
     }
 
-    public void acelerar() {
-        System.out.println("Acelerando");
-    }
+    public abstract void acelerar();
 
     public String frenar() {
         return "Frenando";

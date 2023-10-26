@@ -1,16 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        Automovil auto1 = new Automovil();
-        Automovil auto2 = new Automovil("Renault", "Clio", 2020);
+        Automovil autoFamiliar = new AutoFamiliar();
+        Automovil autoDeportivo = new AutoDeportivo("Renault", "Clio", 2020, true);
+        Automovil autoDeportivo2 = new AutoDeportivo("Fiat");
 
-        System.out.println("Auto 2, marca: " + auto2.getMarca());
-        System.out.println("Auto 2, modelo: " + auto2.getModelo());
+        System.out.println("Auto 2, marca: " + autoDeportivo.getMarca());
+        System.out.println("Auto 2, modelo: " + autoDeportivo.getModelo());
 
-        auto1.setMarca("Ford");
-        auto1.setModelo("Focus");
+        autoFamiliar.setMarca("Ford");
+        autoFamiliar.setModelo("Focus");
 
-        System.out.println("Auto 1, marca: " + auto1.getMarca());
-        System.out.println("Auto 1, modelo: " + auto1.getModelo());
+        System.out.println("Auto 1, marca: " + autoFamiliar.getMarca());
+        System.out.println("Auto 1, modelo: " + autoFamiliar.getModelo());
 
         AutoDeportivo bugatti = new AutoDeportivo();
         bugatti.setMarca("Bugatti");
