@@ -12,6 +12,16 @@ public class Main {
         System.out.println("Auto 1, marca: " + auto1.getMarca());
         System.out.println("Auto 1, modelo: " + auto1.getModelo());
 
+        AutoDeportivo bugatti = new AutoDeportivo();
+        bugatti.setMarca("Bugatti");
+        bugatti.setEsConvertible(true);
+
+        if (bugatti.isEsConvertible()) {
+            System.out.println("El auto marca " + bugatti.getMarca() + " es convertible");
+        } else {
+            System.out.println("El auto marca " + bugatti.getMarca() + " no es convertible");
+        }
+
         Persona emanuel = new Persona("Emanuel", "Garcia", 25, "Programador", true);
         Persona miguel = new Persona("Miguel", "Garcia", 70, "ingeniero", false);
 
